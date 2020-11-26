@@ -21,7 +21,7 @@ int Menu(int discos)
 		break;
 
 	case 2:
-		cout << "O objetivo é passar todos os discos para a terceira torre\nDeve ser movido apenas um disco de cada vez \nSoh eh possivel mover os discos que estiverem no topo\nUm disco maior nao pode ficar em cima de um menor" << endl;
+		cout << "O objetivo Ã© passar todos os discos para a terceira torre\nDeve ser movido apenas um disco de cada vez \nSoh eh possivel mover os discos que estiverem no topo\nUm disco maior nao pode ficar em cima de um menor" << endl;
 
 		cout << "Quanto maior o numero de discos, maior a dificuldade e o numero de movimentos necessarios" << endl;
 		break;
@@ -31,11 +31,6 @@ int Menu(int discos)
 
 	}
 	return discos;
-}
-
-string Inicializa()
-{
-	return "ola caraio\n";
 }
 
 int main()
@@ -61,7 +56,7 @@ int main()
 	//   ***
 	//  *****
 
-	//Inicialização
+	//InicializaÃ§Ã£o
 	for (int i = discos; i > 0; i--)
 	{
 		espacos = "";
@@ -83,7 +78,7 @@ int main()
 		cont++;
 	}
 
-	//Impressão da torre 1
+	//ImpressÃ£o da torre 1
 	for (int i = discos; i > 0; i--)
 	{
 		cout << pilha1.top() << endl;
@@ -102,7 +97,7 @@ int main()
 		pilhaTemp.pop();
 	}
 
-	//Impressão das torres 2 e 3
+	//ImpressÃ£o das torres 2 e 3
 	for (int i = 2; i <= 3; i++)
 	{
 		for (int i = discos; i > 0; i--)
@@ -310,7 +305,7 @@ int main()
 			;
 		}
 
-		//Impressão da torre 1
+		//ImpressÃ£o da torre 1
 		int tamPilha = pilha1.size();
 		for (int i = tamPilha; i > 0; i--)
 		{
@@ -332,7 +327,7 @@ int main()
 			pilhaTemp.pop();
 		}
 
-		//Impressão da torre 2
+		//ImpressÃ£o da torre 2
 		tamPilha = pilha2.size();
 		for (int i = tamPilha; i > 0; i--)
 		{
@@ -351,7 +346,7 @@ int main()
 			pilha2.push(pilhaTemp.top());
 			pilhaTemp.pop();
 		}
-		//Impressão da torre 3
+		//ImpressÃ£o da torre 3
 		tamPilha = pilha3.size();
 		for (int i = tamPilha; i > 0; i--)
 		{
@@ -371,7 +366,7 @@ int main()
 			pilhaTemp.pop();
 		}
 
-		//Condição de vitória
+		//CondiÃ§Ã£o de vitÃ³ria
 		if (pilha3.size() == discos)fim = true;
 	}
 
