@@ -10,7 +10,7 @@ int Menu(int discos)
 
 	cout << " TORRE DE HANOI\n " << endl;
 
-	cout << " Digite 1 para jogar ou 2 para ler as regras: " << endl;
+	cout << " Digite 1 para jogar: " << endl;
 	cin >> menu;
 
 	switch (menu)
